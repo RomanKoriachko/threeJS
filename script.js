@@ -6,12 +6,9 @@ const preload = () => {
 
     var typo = null;
     const loader = new THREE.FontLoader(manager);
-    const font = loader.load(
-        "fonts/Blatant-Bold1694077843/blatant.json",
-        function (font) {
-            typo = font;
-        }
-    );
+    const font = loader.load("fonts/blatant.json", function (font) {
+        typo = font;
+    });
     const particle = new THREE.TextureLoader(manager).load(
         "https://res.cloudinary.com/dfvtkoboz/image/upload/v1605013866/particle_a64uzf.png"
     );
@@ -109,7 +106,7 @@ class CreateParticles {
         this.buttom = false;
 
         this.data = {
-            text: "PUTIN\nHUILO",
+            text: "LET'S\nINTERACT",
             amount: 1500,
             particleSize: 1,
             particleColor: 0xffffff,
