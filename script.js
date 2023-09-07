@@ -7,7 +7,7 @@ const preload = () => {
     var typo = null;
     const loader = new THREE.FontLoader(manager);
     const font = loader.load(
-        "https://res.cloudinary.com/dydre7amr/raw/upload/v1612950355/font_zsd4dr.json",
+        "fonts/Blatant-Bold1694077843/blatant.json",
         function (font) {
             typo = font;
         }
